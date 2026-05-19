@@ -5,13 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Van Aldous Leoncio | Dev Portfolio</title>
 
-    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Fonts -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400&display=swap');
 
@@ -31,14 +27,9 @@
             font-family: 'Fira Code', monospace;
         }
 
-        .accent-text {
-            color: #58a6ff;
-        }
+        .accent-text { color: #58a6ff; }
 
-        .bento-card {
-            transition: all 0.3s ease;
-        }
-
+        .bento-card { transition: all 0.3s ease; }
         .bento-card:hover {
             border-color: #8b949e;
             transform: translateY(-3px);
@@ -54,25 +45,18 @@
             border: 1px solid #166534;
         }
 
-        .project-card:hover .project-overlay {
-            opacity: 1;
-        }
-
+        .project-card:hover .project-overlay { opacity: 1; }
         .project-overlay {
             opacity: 0;
             transition: opacity 0.3s ease;
         }
 
-        /* Pulse ring animation for live badge */
         @keyframes ping-slow {
-            0% { transform: scale(1); opacity: 0.8; }
-            70% { transform: scale(1.6); opacity: 0; }
-            100% { transform: scale(1.6); opacity: 0; }
+            0%   { transform: scale(1);   opacity: 0.8; }
+            70%  { transform: scale(1.6); opacity: 0;   }
+            100% { transform: scale(1.6); opacity: 0;   }
         }
-
-        .ping-slow {
-            animation: ping-slow 1.8s ease-out infinite;
-        }
+        .ping-slow { animation: ping-slow 1.8s ease-out infinite; }
     </style>
 </head>
 
@@ -80,7 +64,7 @@
 
 <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-4">
 
-    <!-- SIDEBAR -->
+    <!-- ===== SIDEBAR ===== -->
     <div class="md:col-span-3 space-y-4">
 
         <!-- Profile -->
@@ -88,22 +72,15 @@
             <img src="https://github.com/leonciovan.png"
                  class="w-32 h-32 rounded-full mx-auto border-2 border-[#30363d]"
                  alt="Van Aldous">
-
             <h1 class="text-xl font-bold mt-4">Van Aldous Leoncio</h1>
             <p class="text-zinc-500 text-sm">@leonciovan</p>
-
             <div class="mt-4 flex justify-center gap-4">
-                <!-- GitHub -->
                 <a href="https://github.com/leonciovan" target="_blank" class="hover:text-blue-400 transition">
                     <i class="fa-brands fa-github text-xl"></i>
                 </a>
-
-                <!-- Facebook -->
                 <a href="https://www.facebook.com/leonciovan" target="_blank" class="hover:text-blue-500 transition">
                     <i class="fa-brands fa-facebook text-xl"></i>
                 </a>
-
-                <!-- Instagram -->
                 <a href="https://www.instagram.com/leonciovan" target="_blank" class="hover:text-pink-400 transition">
                     <i class="fa-brands fa-instagram text-xl"></i>
                 </a>
@@ -112,25 +89,19 @@
 
         <!-- Status -->
         <div class="glass p-5 bento-card text-sm">
-            <h3 class="text-zinc-500 mb-3 uppercase text-[10px] font-bold tracking-widest">
-                Status
-            </h3>
-
+            <h3 class="text-zinc-500 mb-3 uppercase text-[10px] font-bold tracking-widest">Status</h3>
             <p class="flex items-center gap-2">
                 <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                 Available for Internships
             </p>
-
             <p class="mt-4 text-zinc-400 italic">
                 "Turning pixels into purposeful UI/UX experiences."
             </p>
         </div>
 
-        <!-- Tools -->
+        <!-- Design Tools -->
         <div class="glass p-5 bento-card text-sm">
-            <h3 class="text-zinc-500 mb-3 uppercase text-[10px] font-bold tracking-widest">
-                Design Tools
-            </h3>
+            <h3 class="text-zinc-500 mb-3 uppercase text-[10px] font-bold tracking-widest">Design Tools</h3>
             <div class="flex flex-col gap-2">
                 <div class="flex items-center gap-2 text-zinc-400">
                     <i class="fa-brands fa-figma text-purple-400"></i>
@@ -147,24 +118,51 @@
             </div>
         </div>
 
+        <!-- Tech Stack -->
+        <div class="glass p-5 bento-card text-sm">
+            <h3 class="text-zinc-500 mb-3 uppercase text-[10px] font-bold tracking-widest">Tech Stack</h3>
+            <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-2 text-zinc-400">
+                    <i class="fa-brands fa-html5 text-orange-400"></i>
+                    <span>HTML / CSS</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-400">
+                    <i class="fa-brands fa-js text-yellow-400"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-400">
+                    <i class="fa-brands fa-python text-blue-400"></i>
+                    <span>Python</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-400">
+                    <i class="fa-solid fa-database text-cyan-400"></i>
+                    <span>SQL / MySQL</span>
+                </div>
+                <div class="flex items-center gap-2 text-zinc-400">
+                    <i class="fa-brands fa-php text-indigo-400"></i>
+                    <span>PHP</span>
+                </div>
+            </div>
+        </div>
+
     </div>
 
-    <!-- MAIN -->
+    <!-- ===== MAIN ===== -->
     <div class="md:col-span-9 space-y-4">
 
         <!-- Hero -->
-        <div class="glass p-8 flex flex-col justify-center bento-card min-h-[200px] bg-gradient-to-br from-[#0d1117] to-[#161b22]">
+        <div class="glass p-8 flex flex-col justify-center bento-card min-h-[200px]
+                    bg-gradient-to-br from-[#0d1117] to-[#161b22]">
             <h2 class="text-3xl md:text-5xl font-bold mb-2">
                 IT Student & <span class="accent-text">Coder</span>
             </h2>
-
             <p class="text-zinc-400 max-w-xl">
                 Focused on building responsive websites and efficient systems.
                 Currently learning HTML, CSS, JavaScript, Python, and UI design.
             </p>
         </div>
 
-        <!-- Middle -->
+        <!-- Terminal + Repo -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <!-- Terminal -->
@@ -174,40 +172,35 @@
                     <div class="w-2.5 h-2.5 rounded-full bg-yellow-500/50"></div>
                     <div class="w-2.5 h-2.5 rounded-full bg-green-500/50"></div>
                 </div>
-
                 <p class="text-green-400">
                     van@portfolio:~$ <span class="text-white">fetch skills</span>
                 </p>
-
                 <div class="grid grid-cols-2 mt-2 gap-1">
                     <p class="text-zinc-400">▹ HTML/CSS</p>
                     <p class="text-zinc-400">▹ Figma</p>
                     <p class="text-zinc-400">▹ SQL</p>
                     <p class="text-zinc-400">▹ Python</p>
+                    <p class="text-zinc-400">▹ PHP</p>
+                    <p class="text-zinc-400">▹ JavaScript</p>
                 </div>
             </div>
 
-            <!-- Repo -->
+            <!-- Featured Repo -->
             <div class="glass p-6 bento-card">
                 <h3 class="text-zinc-500 mb-4 uppercase text-[10px] font-bold tracking-widest">
                     Featured Repo
                 </h3>
-
                 <div class="flex items-start justify-between">
                     <div>
-                        <p class="accent-text font-bold text-lg">
-                            my-website
-                        </p>
+                        <p class="accent-text font-bold text-lg">my-website</p>
                         <p class="text-xs text-zinc-500 mt-1">
                             My portfolio dashboard hosted on GitHub Pages.
                         </p>
                     </div>
-
                     <span class="text-[10px] border border-[#30363d] px-2 py-0.5 rounded-full">
                         Public
                     </span>
                 </div>
-
                 <a href="https://github.com/leonciovan/my-website"
                    target="_blank"
                    class="inline-block mt-4 text-xs text-blue-400 hover:underline">
@@ -217,79 +210,117 @@
 
         </div>
 
-        <!-- ===== GROUP PROJECT SECTION ===== -->
-        <div class="health-badge rounded-xl p-6 bento-card group hover:border-green-400 transition-all duration-300">
+        <!-- ===== GROUP PROJECT — BARANGAY HEALTH CENTER ===== -->
+        <div class="glass p-6 bento-card">
 
-            <!-- Top Row -->
-            <div class="flex items-center justify-between mb-5">
-                <div class="flex items-center gap-3">
+            <h3 class="text-zinc-500 mb-5 uppercase text-[10px] font-bold tracking-widest flex items-center gap-2">
+                <i class="fa-solid fa-notes-medical text-green-400"></i>
+                Group Project
+            </h3>
 
-                    <!-- Icon -->
-                    <div class="w-10 h-10 rounded-xl bg-green-500/20 flex items-center justify-center flex-shrink-0">
-                        <i class="fa-solid fa-hospital text-green-400 text-lg"></i>
+            <a href="https://barangay-health.is-great.net/main.php"
+               target="_blank"
+               class="project-card health-badge rounded-xl p-6 flex flex-col md:flex-row gap-6
+                      hover:border-green-400 border transition-all duration-300 group block">
+
+                <!-- Left: Icon + Live Badge -->
+                <div class="flex flex-col items-center justify-center gap-3 md:w-24 shrink-0">
+                    <div class="w-16 h-16 rounded-2xl bg-green-500/10 border border-green-800/50
+                                flex items-center justify-center">
+                        <i class="fa-solid fa-hospital text-green-400 text-2xl"></i>
                     </div>
 
-                    <div>
-                        <h3 class="text-zinc-400 uppercase text-[10px] font-bold tracking-widest flex items-center gap-2">
-                            <span>Group Project</span>
-
-                            <!-- Live Badge -->
-                            <span class="relative flex items-center gap-1.5 bg-green-900/50 border border-green-700/60 text-green-400 text-[9px] px-2 py-0.5 rounded-full">
-                                <span class="relative flex h-1.5 w-1.5">
-                                    <span class="ping-slow absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                                    <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
-                                </span>
-                                LIVE
-                            </span>
-                        </h3>
-                        <p class="text-white font-bold text-lg leading-tight mt-0.5">
-                            Barangay Health Center Queuing System
-                        </p>
+                    <!-- Live Badge -->
+                    <div class="flex items-center gap-1.5">
+                        <span class="relative flex h-2 w-2">
+                            <span class="ping-slow absolute inline-flex h-full w-full rounded-full
+                                         bg-green-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                        </span>
+                        <span class="text-[10px] text-green-400 font-bold uppercase tracking-widest">
+                            Live
+                        </span>
                     </div>
                 </div>
 
-                <!-- External Link Icon -->
-                <i class="fa-solid fa-arrow-up-right-from-square text-sm text-zinc-600 group-hover:text-green-400 transition-colors duration-300 flex-shrink-0"></i>
-            </div>
+                <!-- Right: Info -->
+                <div class="flex flex-col gap-3 flex-1">
 
-            <!-- Description -->
-            <p class="text-sm text-zinc-400 leading-relaxed mb-5">
-                A web-based queuing management system designed for barangay health centers.
-                Streamlines patient flow, reduces waiting time, and organizes health service
-                queues efficiently — built as a collaborative group project.
-            </p>
+                    <div class="flex items-start justify-between gap-2">
+                        <div>
+                            <p class="font-bold text-white text-lg leading-snug">
+                                Barangay Health Center
+                                <span class="text-green-400">Queuing System</span>
+                            </p>
+                            <p class="text-xs text-zinc-400 mt-1">
+                                A web-based patient queuing and management system built for a
+                                barangay health center. Handles patient registration, queue
+                                numbering, service routing, and real-time queue display —
+                                reducing wait times and improving clinic workflow.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-zinc-600
+                                  group-hover:text-green-400 transition-colors duration-300 shrink-0 mt-1"></i>
+                    </div>
 
-            <!-- Tags -->
-            <div class="flex flex-wrap gap-2 mb-5">
-                <span class="text-[10px] bg-green-900/40 text-green-300 px-2.5 py-0.5 rounded-full border border-green-800/50">
-                    <i class="fa-solid fa-globe mr-1 text-[9px]"></i>Web App
-                </span>
-                <span class="text-[10px] bg-green-900/40 text-green-300 px-2.5 py-0.5 rounded-full border border-green-800/50">
-                    <i class="fa-solid fa-people-group mr-1 text-[9px]"></i>Group Project
-                </span>
-                <span class="text-[10px] bg-green-900/40 text-green-300 px-2.5 py-0.5 rounded-full border border-green-800/50">
-                    <i class="fa-solid fa-queue mr-1 text-[9px]"></i>Queue System
-                </span>
-                <span class="text-[10px] bg-green-900/40 text-green-300 px-2.5 py-0.5 rounded-full border border-green-800/50">
-                    <i class="fa-solid fa-heart-pulse mr-1 text-[9px]"></i>Health System
-                </span>
-                <span class="text-[10px] bg-green-900/40 text-green-300 px-2.5 py-0.5 rounded-full border border-green-800/50">
-                    <i class="fa-solid fa-php mr-1 text-[9px]"></i>PHP
-                </span>
-            </div>
+                    <!-- Feature Pills -->
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-2 text-[10px]">
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-list-ol text-green-400"></i>
+                            Queue Management
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-user-plus text-green-400"></i>
+                            Patient Registration
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-display text-green-400"></i>
+                            Live Queue Display
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-stethoscope text-green-400"></i>
+                            Service Routing
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-clock text-green-400"></i>
+                            Wait Time Tracking
+                        </div>
+                        <div class="flex items-center gap-1.5 bg-green-900/30 border border-green-800/40
+                                    rounded-lg px-2.5 py-1.5 text-green-300">
+                            <i class="fa-solid fa-people-group text-green-400"></i>
+                            Group Project
+                        </div>
+                    </div>
 
-            <!-- CTA Button -->
-            <a href="https://bhqc.infinityfreeapp.com/main.php"
-               target="_blank"
-               class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-500 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-green-900/50">
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                Visit Live App
+                    <!-- Tech Tags -->
+                    <div class="flex flex-wrap gap-2 mt-1">
+                        <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-0.5
+                                     rounded-full border border-zinc-700">PHP</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-0.5
+                                     rounded-full border border-zinc-700">MySQL</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-0.5
+                                     rounded-full border border-zinc-700">JavaScript</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-0.5
+                                     rounded-full border border-zinc-700">HTML/CSS</span>
+                        <span class="text-[10px] bg-zinc-800 text-zinc-300 px-2 py-0.5
+                                     rounded-full border border-zinc-700">Bootstrap</span>
+                    </div>
+
+                    <p class="text-xs text-green-400 group-hover:underline mt-auto pt-1">
+                        Visit Live System →
+                    </p>
+
+                </div>
             </a>
-
         </div>
         <!-- ===== END GROUP PROJECT ===== -->
 
-        <!-- ===== FIGMA PROJECTS SECTION ===== -->
+        <!-- ===== FIGMA PROJECTS ===== -->
         <div class="glass p-6 bento-card">
 
             <h3 class="text-zinc-500 mb-5 uppercase text-[10px] font-bold tracking-widest flex items-center gap-2">
@@ -299,10 +330,11 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-                <!-- Project 1 — Activity Web Design -->
+                <!-- Figma Project 1 -->
                 <a href="https://www.figma.com/design/mEiq8fSMd5aKibnrjQHdtp/ACTIVITY-WEB-DESIGN?t=JKtYSLO9c36Sb9cm-1"
                    target="_blank"
-                   class="project-card relative figma-badge rounded-xl p-5 flex flex-col gap-3 hover:border-indigo-400 border transition-all duration-300 group">
+                   class="project-card figma-badge rounded-xl p-5 flex flex-col gap-3
+                          hover:border-indigo-400 border transition-all duration-300 group">
 
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
@@ -313,41 +345,36 @@
                                 Activity
                             </span>
                         </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-zinc-600 group-hover:text-indigo-400 transition-colors duration-300"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-zinc-600
+                                  group-hover:text-indigo-400 transition-colors duration-300"></i>
                     </div>
 
                     <div>
-                        <p class="font-bold text-white text-base leading-snug">
-                            Activity Web Design
-                        </p>
+                        <p class="font-bold text-white text-base leading-snug">Activity Web Design</p>
                         <p class="text-xs text-zinc-400 mt-1">
                             Web design activity exploring layout, components, and visual hierarchy in Figma.
                         </p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5 rounded-full border border-indigo-800/50">
-                            Web Design
-                        </span>
-                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5 rounded-full border border-indigo-800/50">
-                            UI Layout
-                        </span>
-                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5 rounded-full border border-indigo-800/50">
-                            Figma
-                        </span>
+                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5
+                                     rounded-full border border-indigo-800/50">Web Design</span>
+                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5
+                                     rounded-full border border-indigo-800/50">UI Layout</span>
+                        <span class="text-[10px] bg-indigo-900/40 text-indigo-300 px-2 py-0.5
+                                     rounded-full border border-indigo-800/50">Figma</span>
                     </div>
 
                     <p class="text-xs text-indigo-400 group-hover:underline mt-auto pt-1">
                         Open in Figma →
                     </p>
-
                 </a>
 
-                <!-- Project 2 — Midterm Wireframe -->
+                <!-- Figma Project 2 -->
                 <a href="https://www.figma.com/design/dImSivk8CUKgofFPHaTJfy/Van_leoncio_Midterm_Activity-2_New-Figma-Wireframe-Design.?node-id=0-1&t=JKtYSLO9c36Sb9cm-1"
                    target="_blank"
-                   class="project-card relative figma-badge rounded-xl p-5 flex flex-col gap-3 hover:border-purple-400 border transition-all duration-300 group">
+                   class="project-card figma-badge rounded-xl p-5 flex flex-col gap-3
+                          hover:border-purple-400 border transition-all duration-300 group">
 
                     <div class="flex items-center justify-between">
                         <div class="flex items-center gap-2">
@@ -358,45 +385,38 @@
                                 Midterm
                             </span>
                         </div>
-
-                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-zinc-600 group-hover:text-purple-400 transition-colors duration-300"></i>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-zinc-600
+                                  group-hover:text-purple-400 transition-colors duration-300"></i>
                     </div>
 
                     <div>
-                        <p class="font-bold text-white text-base leading-snug">
-                            Midterm Wireframe Design
-                        </p>
+                        <p class="font-bold text-white text-base leading-snug">Midterm Wireframe Design</p>
                         <p class="text-xs text-zinc-400 mt-1">
                             New wireframe prototype created for midterm activity — structured UX flows and responsive layouts.
                         </p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 mt-1">
-                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5 rounded-full border border-purple-800/50">
-                            Wireframe
-                        </span>
-                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5 rounded-full border border-purple-800/50">
-                            UX Design
-                        </span>
-                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5 rounded-full border border-purple-800/50">
-                            Prototype
-                        </span>
+                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5
+                                     rounded-full border border-purple-800/50">Wireframe</span>
+                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5
+                                     rounded-full border border-purple-800/50">UX Design</span>
+                        <span class="text-[10px] bg-purple-900/40 text-purple-300 px-2 py-0.5
+                                     rounded-full border border-purple-800/50">Prototype</span>
                     </div>
 
                     <p class="text-xs text-purple-400 group-hover:underline mt-auto pt-1">
                         Open in Figma →
                     </p>
-
                 </a>
 
             </div>
         </div>
         <!-- ===== END FIGMA PROJECTS ===== -->
 
-        <!-- Bottom -->
+        <!-- Education + Contact -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 
-            <!-- Education -->
             <div class="glass p-5 bento-card md:col-span-2 flex justify-between items-center">
                 <div>
                     <h3 class="text-zinc-500 uppercase text-[10px] font-bold tracking-widest">
@@ -405,13 +425,12 @@
                     <p class="font-bold">BS Information Technology</p>
                     <p class="text-xs text-zinc-500">Expected 2027</p>
                 </div>
-
                 <i class="fa-solid fa-graduation-cap text-3xl text-zinc-800"></i>
             </div>
 
-            <!-- Contact -->
             <a href="mailto:vanleoncio57@gmail.com"
-               class="glass p-5 bento-card flex items-center justify-center bg-white text-black font-bold hover:bg-zinc-200 transition">
+               class="glass p-5 bento-card flex items-center justify-center
+                      bg-white text-black font-bold hover:bg-zinc-200 transition">
                 Contact Me
             </a>
 
